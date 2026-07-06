@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calculator-shell" aria-label="Calculator">
+    <section class="calculator">
+      <div class="display" aria-live="polite">
+        <div class="history" id="history"></div>
+        <div class="current" id="current">0</div>
+      </div>
+
+      <div class="keys">
+        <button class="key utility" onclick="clearDisplay()">AC</button>
+        <button class="key utility" onclick="deleteLast()">DEL</button>
+        <button class="key utility" onclick="appendValue('%')">%</button>
+        <button class="key operator" onclick="appendValue('/')">/</button>
+
+        <button class="key" onclick="appendValue('7')">7</button>
+        <button class="key" onclick="appendValue('8')">8</button>
+        <button class="key" onclick="appendValue('9')">9</button>
+        <button class="key operator" onclick="appendValue('*')">x</button>
+
+        <button class="key" onclick="appendValue('4')">4</button>
+        <button class="key" onclick="appendValue('5')">5</button>
+        <button class="key" onclick="appendValue('6')">6</button>
+        <button class="key operator" onclick="appendValue('-')">-</button>
+
+        <button class="key" onclick="appendValue('1')">1</button>
+        <button class="key" onclick="appendValue('2')">2</button>
+        <button class="key" onclick="appendValue('3')">3</button>
+        <button class="key operator" onclick="appendValue('+')">+</button>
+
+        <button class="key zero" onclick="appendValue('0')">0</button>
+        <button class="key" onclick="appendValue('.')">.</button>
+        <button class="key equals" onclick="calculate()">=</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
