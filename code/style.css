@@ -32,10 +32,10 @@ body {
 }
 
 .calculator {
-  width: 280px;
+  width: 310px;
   max-width: 100%;
-  padding: 16px;
-  border-radius: 16px;
+  padding: 18px;
+  border-radius: 17px;
   background: linear-gradient(180deg, var(--body), var(--body-dark));
   box-shadow:
     0 22px 35px rgba(0, 0, 0, 0.28),
@@ -44,12 +44,12 @@ body {
 }
 
 .display {
-  min-height: 76px;
+  min-height: 86px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin-bottom: 16px;
-  padding: 12px;
+  margin-bottom: 18px;
+  padding: 14px;
   overflow: hidden;
   border: 5px solid #17191b;
   border-radius: 9px;
@@ -64,9 +64,9 @@ body {
 }
 
 .current {
-  min-height: 34px;
+  min-height: 38px;
   font-family: "Courier New", monospace;
-  font-size: 2.15rem;
+  font-size: 2.45rem;
   font-weight: 700;
   line-height: 1;
   word-break: break-all;
@@ -75,17 +75,17 @@ body {
 .keys {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 8px;
+  gap: 9px;
 }
 
 .key {
-  min-height: 48px;
+  min-height: 54px;
   border: 0;
   border-radius: 8px;
   background: #ffffff;
   color: #202020;
   font: inherit;
-  font-size: 1.05rem;
+  font-size: 1.18rem;
   font-weight: 700;
   cursor: pointer;
   box-shadow:
@@ -144,10 +144,10 @@ body {
   }
 
   .calculator {
-    padding: 14px;
+    padding: 15px;
   }
 
   .key {
-    min-height: 46px;
+    min-height: 50px;
   }
 }
